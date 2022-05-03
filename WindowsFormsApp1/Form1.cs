@@ -141,6 +141,35 @@ namespace WindowsFormsApp1
                 }
             }
             pictureBox2.Image = bmp;
+            Bitmap bmp1 = new Bitmap(pictureBox2.Image);
+            for (int y = 10; y < h - 10; y++)
+            {
+                for (int x = 10; x < w - 10; x++)
+                {
+                    int total = 0;
+                    int avg = 0;
+                    int a = 0;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        for (int j = 0; j < 10; j++)
+                        {
+                            Color p = bmp1.GetPixel(x + i, y + j);
+                            a = p.A;
+                            total += p.R;
+                        }
+                        avg = (int)(total / 100);
+                    }
+                    bmp1.SetPixel(x, y, Color.FromArgb(a, avg, avg, avg));
+                }
+            }
+            pictureBox3.Image = bmp1;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
         }
     }
 }

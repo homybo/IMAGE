@@ -40,6 +40,7 @@ namespace WindowsFormsApp1
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -68,29 +69,29 @@ namespace WindowsFormsApp1
             // BtnLoad
             // 
             this.BtnLoad.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnLoad.Location = new System.Drawing.Point(12, 435);
+            this.BtnLoad.Location = new System.Drawing.Point(10, 298);
             this.BtnLoad.Name = "BtnLoad";
             this.BtnLoad.Size = new System.Drawing.Size(369, 88);
             this.BtnLoad.TabIndex = 2;
-            this.BtnLoad.Text = "LOAD";
+            this.BtnLoad.Text = "讀取";
             this.BtnLoad.UseVisualStyleBackColor = true;
             this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
             // BtnChange
             // 
             this.BtnChange.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnChange.Location = new System.Drawing.Point(775, 359);
+            this.BtnChange.Location = new System.Drawing.Point(748, 298);
             this.BtnChange.Name = "BtnChange";
-            this.BtnChange.Size = new System.Drawing.Size(369, 72);
+            this.BtnChange.Size = new System.Drawing.Size(396, 88);
             this.BtnChange.TabIndex = 3;
-            this.BtnChange.Text = "反";
+            this.BtnChange.Text = "負片";
             this.BtnChange.UseVisualStyleBackColor = true;
             this.BtnChange.Click += new System.EventHandler(this.BtnChange_Click);
             // 
             // BtnLoad2
             // 
             this.BtnLoad2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnLoad2.Location = new System.Drawing.Point(12, 529);
+            this.BtnLoad2.Location = new System.Drawing.Point(10, 392);
             this.BtnLoad2.Name = "BtnLoad2";
             this.BtnLoad2.Size = new System.Drawing.Size(369, 88);
             this.BtnLoad2.TabIndex = 4;
@@ -101,33 +102,33 @@ namespace WindowsFormsApp1
             // BtnChange2
             // 
             this.BtnChange2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnChange2.Location = new System.Drawing.Point(775, 437);
+            this.BtnChange2.Location = new System.Drawing.Point(748, 392);
             this.BtnChange2.Name = "BtnChange2";
-            this.BtnChange2.Size = new System.Drawing.Size(369, 70);
+            this.BtnChange2.Size = new System.Drawing.Size(396, 88);
             this.BtnChange2.TabIndex = 5;
-            this.BtnChange2.Text = "灰";
+            this.BtnChange2.Text = "灰階";
             this.BtnChange2.UseVisualStyleBackColor = true;
             this.BtnChange2.Click += new System.EventHandler(this.BtnChange2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(775, 513);
+            this.button1.Location = new System.Drawing.Point(748, 486);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(369, 70);
+            this.button1.Size = new System.Drawing.Size(396, 79);
             this.button1.TabIndex = 6;
-            this.button1.Text = "亮";
+            this.button1.Text = "增亮";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(400, 360);
+            this.button2.Location = new System.Drawing.Point(385, 298);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(369, 70);
+            this.button2.Size = new System.Drawing.Size(357, 88);
             this.button2.TabIndex = 7;
-            this.button2.Text = "馬";
+            this.button2.Text = "馬賽克";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -144,29 +145,41 @@ namespace WindowsFormsApp1
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(400, 437);
+            this.button3.Location = new System.Drawing.Point(385, 392);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(369, 70);
+            this.button3.Size = new System.Drawing.Size(357, 88);
             this.button3.TabIndex = 9;
-            this.button3.Text = "灰";
+            this.button3.Text = "模糊";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(400, 513);
+            this.button4.Location = new System.Drawing.Point(385, 486);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(369, 70);
+            this.button4.Size = new System.Drawing.Size(357, 79);
             this.button4.TabIndex = 10;
-            this.button4.Text = "灰";
+            this.button4.Text = "還不知道";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button5.Location = new System.Drawing.Point(10, 486);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(369, 79);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "清除";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 629);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
@@ -200,6 +213,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
